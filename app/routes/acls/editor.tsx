@@ -184,6 +184,8 @@ export default function Page() {
 
 	return (
 		<div>
+			<h1>THIS IS WHAT DATA LOOKS LIKE</h1>
+			<pre>{JSON.stringify(data, null, 2)}</pre>
 			{data.read && !data.write ? (
 				<div className="mb-4">
 					<Notice>
